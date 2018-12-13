@@ -1,13 +1,12 @@
 from urllib import request
 import urllib, platform, zlib, base64
 # Coded for Python 3
-
 strStaticKey = "39096799Easy" # From DriverEasy.exe
 
 def fullDecypt(strFilePath):
-    try:
-        hFile = open(strFilePath, 'rb+')
-    except:
+	try:
+		hFile = open(strFilePath, 'rb+')
+	except:
         print("[!] Error opening file")
         return
     bData = hFile.read()
